@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Form Feedback
+    style.
+      body {
+          font-family: Arial, sans-serif;
+      }
+      .form-container {
+          width: 300px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #32a852;
+          border-radius: 10px;
+          color: white;
+      }
+      .form-container h2 {
+          text-align: center;
+      }
+      .form-container label {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: bold;
+      }
+      .form-container input[type="text"],
+      .form-container input[type="email"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+          border: none;
+          border-radius: 5px;
+      }
+      .form-container input[type="radio"] {
+          margin-right: 10px;
+      }
+      .form-container .radio-label {
+          margin-right: 15px;
+      }
+      .form-container button {
+          width: 100%;
+          padding: 10px;
+          background-color: #66cc75;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+  body
+    .form-container
+      h2 Form Feedback
+      p Kami senang bisa mengetahui umpan balik anda
+      form(action="#")
+        label(for="nama") Nama *
+        input(type="text", id="nama", name="nama", placeholder="Nama anda", required)
+
+        label(for="email") E-mail *
+        input(type="email", id="email", name="email", placeholder="contoh@contoh.com", required)
+
+        label Tipe Feedback:
+        .radio-group
+          label.radio-label
+            input(type="radio", name="tipe_feedback", value="Penilaian", required)
+            |  Penilaian
+          label.radio-label
+            input(type="radio", name="tipe_feedback", value="Saran / Pertanyaan", required)
+            |  Saran / Pertanyaan
+
+        button(type="submit") Next

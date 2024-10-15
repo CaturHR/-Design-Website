@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,12 +61,14 @@
             <input type="email" id="email" name="email" placeholder="contoh@contoh.com" required>
 
             <label>Tipe Feedback:</label>
-            <label class="radio-label">
-                <input type="radio" name="tipe_feedback" value="Penilaian" required> Penilaian
-            </label>
-            <label class="radio-label">
-                <input type="radio" name="tipe_feedback" value="Saran / Pertanyaan" required> Saran / Pertanyaan
-            </label>
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="tipe_feedback" value="Penilaian" required> Penilaian
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="tipe_feedback" value="Saran / Pertanyaan" required> Saran / Pertanyaan
+                </label>
+            </div>
 
             <button type="submit">Next</button>
         </form>
