@@ -1,16 +1,19 @@
 style.
-    .button {
-        background-color: #52A940;
-        font-size: 20pt;
-        border: none;
-        color: #000000;
-        padding: 9px;
-        width: 90px; // tambahkan px untuk ukuran
-        border-radius: 5px;
-    }
-    .button:hover {
-        color: #0015FF;
-        background-color: #7DBF70;
-    }
+    mixin buttonStyle(backgroundColor, fontSize, width)
+        .button {
+            background-color: backgroundColor;
+            font-size: fontSize;
+            border: none;
+            color: #000000;
+            padding: 9px;
+            width: width; 
+            border-radius: 5px;
+        }
+        .button:hover {
+            color: #0015FF;
+            background-color: #7DBF70;
+        }
+
+    +buttonStyle("#52A940", "20pt", "90px")
 
 button.button Prev

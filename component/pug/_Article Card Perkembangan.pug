@@ -64,21 +64,14 @@ html(lang="en")
 
   body
     .card-container
-      .card
-        img(src="Perkembangan.png", alt="Perkembangan 1")
-        h3 Lorem Ipsum
-        p Lorem ipsum odor amet, consectetur adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.
-      
-      .arrow → 
+      mixin articleCard(image, title, description)
+        .card
+          img(src=image, alt=title)
+          h3= title
+          p= description
 
-      .card
-        img(src="Perkembangan.png", alt="Perkembangan 2")
-        h3 Lorem Ipsum
-        p Lorem ipsum odor amet, consectetur adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.
-      
+      +articleCard("Perkembangan.png", "Lorem Ipsum 1", "Lorem ipsum odor amet, consectetur adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.")
       .arrow → 
-
-      .card
-        img(src="Perkembangan.png", alt="Perkembangan 3")
-        h3 Lorem Ipsum
-        p Lorem ipsum odor amet, consectetur adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.
+      +articleCard("Perkembangan.png", "Lorem Ipsum 2", "Lorem ipsum odor amet, consectetur adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.")
+      .arrow → 
+      +articleCard("Perkembangan.png", "Lorem Ipsum 3", "Lorem ipsum odor amet, consectetur adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.")
