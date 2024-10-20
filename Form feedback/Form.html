@@ -3,75 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Feedback</title>
+    <title>Form Example</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
         }
-        .form-container {
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #32a852;
-            border-radius: 10px;
-            color: white;
+
+        * {
+            box-sizing: border-box;
         }
-        .form-container h2 {
-            text-align: center;
-        }
-        .form-container label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .form-container input[type="text"],
-        .form-container input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: none;
+
+        /* Style the container/contact section */
+        .container {
+            background-color: #fff;
+            padding: 50px;
+            margin: 20px auto;
             border-radius: 5px;
         }
-        .form-container input[type="radio"] {
-            margin-right: 10px;
-        }
-        .form-container .radio-label {
-            margin-right: 15px;
-        }
-        .form-container button {
+
+        /* Style the form inputs */
+        input[type="text"], input[type="email"], select, textarea {
             width: 100%;
-            padding: 10px;
-            background-color: #66cc75;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: #4CAF50;
             color: white;
+            padding: 12px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the labels */
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        /* Style the radio buttons */
+        input[type="radio"] {
+            margin: 5px 0 10px 0;
         }
     </style>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Form Feedback</h2>
-        <p>Kami senang bisa mengetahui umpan balik anda</p>
-        <form action="#">
-            <label for="nama">Nama *</label>
-            <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
 
-            <label for="email">E-mail *</label>
-            <input type="email" id="email" name="email" placeholder="contoh@contoh.com" required>
-
-            <label>Tipe Feedback:</label>
-            <div class="radio-group">
-                <label class="radio-label">
-                    <input type="radio" name="tipe_feedback" value="Penilaian" required> Penilaian
-                </label>
-                <label class="radio-label">
-                    <input type="radio" name="tipe_feedback" value="Saran / Pertanyaan" required> Saran / Pertanyaan
-                </label>
+<div class="container">
+    <h2>Contact Form</h2>
+    <form action="#">
+        <div class="row">
+            <div class="col-25">
+                <label for="name">Name</label>
             </div>
+            <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+                <textarea id="message" name="message" placeholder="Write something.." required style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
 
-            <button type="submit">Next</button>
-        </form>
-    </div>
 </body>
 </html>
