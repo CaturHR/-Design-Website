@@ -27,6 +27,45 @@
             background-color: #4CAF50;
             color: white;
         }
+        .navbar .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .navbar .dropdown .dropbtn {
+            font-size: 32px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 32.5px 64px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar .dropdown:hover .dropbtn {
+            color: rgb(0,21,255);
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            float: none;
+            color: blue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .navbar .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
         .navbar .lang-button {
             float: right;
             background-color: #7CFC00;
@@ -37,8 +76,8 @@
             color: black;
         }
         .navbar .lang-button:hover {
-        color: #0015FF;
-        background-color: #808080;
+            color: #0015FF;
+            background-color: #808080;
         }
     </style>
 </head>
@@ -46,8 +85,28 @@
 
     <div class="navbar">
         <a href="#home">Home</a>
-        <a href="#profile">Profile ></a>
-        <a href="#service">Service ></a>
+        <div class="dropdown">
+            <button class="dropbtn">Profile > 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Visi dan Misi">Visi dan Misi</a>
+                <a href="#Struktur Organisasi">Struktur Organisasi</a>
+                <a href="#Perkembangan">Perkembangan</a>
+                <a href="#Unit Kerja">Unit Kerja</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Service > 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Feedback">Feedback</a>
+                <a href="#Penggolongan Usia">Penggolongan Usia</a>
+                <a href="#Lokasi Perpusum">Lokasi Perpusum</a>
+                <a href="#Biodata Penerbit">Biodata Penerbit</a>
+            </div>
+        </div> 
         <a href="#activity">Activity ></a>
         <a href="#recommendation">Recommendation ></a>
         <a href="#search">🔍Search</a>
