@@ -5,66 +5,113 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Form Feedback
     style.
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
       body {
           font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
       }
+
       .form-container {
-          width: 300px;
-          margin: 0 auto;
+          background-color: white;
           padding: 20px;
-          background-color: #32a852;
-          border-radius: 10px;
-          color: white;
-      }
-      .form-container h2 {
+          border-radius: 8px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          max-width: 400px;
           text-align: center;
       }
-      .form-container label {
-          display: block;
+
+      h1 {
+          color: #4CAF50;
           margin-bottom: 10px;
-          font-weight: bold;
       }
-      .form-container input[type="text"],
-      .form-container input[type="email"] {
+
+      p {
+          margin-bottom: 20px;
+          color: #555;
+      }
+
+      .form-group {
+          margin-bottom: 20px;
+          text-align: left;
+      }
+
+      label {
+          display: block;
+          margin-bottom: 8px;
+          color: #333;
+      }
+
+      input[type="text"], 
+      input[type="email"] {
           width: 100%;
           padding: 10px;
-          margin-bottom: 20px;
-          border: none;
-          border-radius: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-top: 5px;
+          font-size: 14px;
       }
-      .form-container input[type="radio"] {
+
+      .radio-group {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+      }
+
+      .radio-group label {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+      }
+
+      input[type="radio"] {
           margin-right: 10px;
       }
-      .form-container .radio-label {
-          margin-right: 15px;
-      }
-      .form-container button {
-          width: 100%;
-          padding: 10px;
-          background-color: #66cc75;
+
+      button {
+          background-color: #4CAF50;
           color: white;
           border: none;
-          border-radius: 5px;
+          padding: 10px 20px;
+          border-radius: 4px;
           cursor: pointer;
+          font-size: 16px;
       }
+
+      button:hover {
+          background-color: #45a049;
+      }
+
   body
     .form-container
-      h2 Form Feedback
+      h1 Form Feedback
       p Kami senang bisa mengetahui umpan balik anda
-      form(action="#")
-        label(for="nama") Nama *
-        input(type="text", id="nama", name="nama", placeholder="Nama anda", required)
+      form
+        .form-group
+          label(for="name") Nama *
+          input(type="text", id="name", name="name", placeholder="Nama anda", required)
 
-        label(for="email") E-mail *
-        input(type="email", id="email", name="email", placeholder="contoh@contoh.com", required)
+        .form-group
+          label(for="email") E-mail *
+          input(type="email", id="email", name="email", placeholder="contoh@contoh.com", required)
 
-        label Tipe Feedback:
-        .radio-group
-          label.radio-label
-            input(type="radio", name="tipe_feedback", value="Penilaian", required)
-            |  Penilaian
-          label.radio-label
-            input(type="radio", name="tipe_feedback", value="Saran / Pertanyaan", required)
-            |  Saran / Pertanyaan
+        .form-group
+          label Tipe Feedback :
+          .radio-group
+            label
+              input(type="radio", name="feedback-type", value="Penilaian", required) 
+              |Penilaian
+            label
+              input(type="radio", name="feedback-type", value="Saran / Pertanyaan", required) 
+              |Saran / Pertanyaan
 
         button(type="submit") Next
