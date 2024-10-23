@@ -80,13 +80,16 @@ html
         background-color: #808080;
       }
 
-mixin dropdown(title, items)
-  .dropdown
-    button.dropbtn= title + ' >'
-    .dropdown-content
-      each item in items
-        a(href=item.href)= item.text
-        
+    mixin dropdown(title, items)
+      .dropdown
+        button.dropbtn= title + ' >'
+        .dropdown-content
+          each item in items
+            a(href=item.href)= item.text
+
+    mixin langButton(label)
+        button.lang-button= label
+      
   body
 
     .navbar
@@ -113,13 +116,3 @@ mixin dropdown(title, items)
       ])
       a(href="#search") 🔍Search
       +langButton('English')
-
-mixin dropdown(title, items)
-  .dropdown
-    button.dropbtn= title + ' >'
-    .dropdown-content
-      each item in items
-        a(href=item.href)= item.text
-
-mixin langButton(label)
-  button.lang-button= label
