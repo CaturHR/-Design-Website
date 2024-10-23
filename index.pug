@@ -1,6 +1,6 @@
-include component/pug/_header.pug
-include component/pug/_Article Card Berita.pug
-include component/pug/_footer.pug
+include Komponen/Header/pug/header.pug
+include Komponen/Article Card Berita/pug/Article Card Berita.pug
+include Komponen/Footer/pug/footer.pug
 
 doctype html
 html(lang="en")
@@ -14,7 +14,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Example Page with Navbar and Cards
-    link(rel="stylesheet" href="/path/to/your/style.css") // Ganti dengan jalur file CSS
+    link(rel="stylesheet" href="/path/to/your/style.css")
 
   body
     // Navbar Section
@@ -101,7 +101,13 @@ html(lang="en")
           p Twitter: @perpusum02
           p Alamat: Jl raya lenteng No 2 sumenep
 
-
+mixin dropdown(title, items)
+  .dropdown
+    button.dropbtn= title + ' >'
+    .dropdown-content
+      each item in items
+        a(href=item.href)= item.text
+        
     body 
       +dropdown('Profile', [
         {text: 'Visi dan Misi', href: '#Visi dan Misi'},
