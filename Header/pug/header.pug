@@ -4,45 +4,107 @@ html
     title Header
     style.
       body {
-          margin: 0;
-          font-family: Regular;
+        margin: 0;
+        font-family: Regular;
       }
       .navbar {
-          background-color: #228B22; 
-          overflow: hidden;
-          padding: 10px;
+        background-color: #228B22; 
+        overflow: hidden;
+        padding: 10px;
       }
       .navbar a {
-          float: left;
-          color: black;
-          text-align: center;
-          padding: 32.5px 64px;
-          text-decoration: none;
-          font-size: 32px;
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 32.5px 64px;
+        text-decoration: none;
+        font-size: 32px;
       }
       .navbar a:hover {
-          color: rgb(0,21,255);
+        color: rgb(0,21,255);
       }
       .navbar a.active {
-          background-color: #4CAF50;
-          color: white;
+        background-color: #4CAF50;
+        color: white;
+      }
+      .navbar .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      .navbar .dropdown .dropbtn {
+        font-size: 32px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 32.5px 64px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      .navbar .dropdown:hover .dropbtn {
+        color: rgb(0,21,255);
+      }
+      .navbar .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .navbar .dropdown-content a {
+        float: none;
+        color: blue;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .navbar .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      .navbar .dropdown:hover .dropdown-content {
+        display: block;
       }
       .navbar .lang-button {
-          float: right;
-          background-color: #7CFC00;
-          border: none;
-          padding: 32.5px 64px;
-          font-size: 32px;
-          cursor: pointer;
-          color: black;
+        float: right;
+        background-color: #7CFC00;
+        border: none;
+        padding: 32.5px 64px;
+        font-size: 32px;
+        cursor: pointer;
+        color: black;
       }
-
+      .navbar .lang-button:hover {
+        color: #0015FF;
+        background-color: #808080;
+      }
   body
     .navbar
       a(href="#home") Home
-      a(href="#profile") Profile >
-      a(href="#service") Service >
-      a(href="#activity") Activity >
-      a(href="#recommendation") Recommendation >
+      .dropdown
+        button.dropbtn Profile >
+        .dropdown-content
+          a(href="#Visi dan Misi") Visi dan Misi
+          a(href="#Struktur Organisasi") Struktur Organisasi
+          a(href="#Perkembangan") Perkembangan
+          a(href="#Unit Kerja") Unit Kerja
+      .dropdown
+        button.dropbtn Service >
+        .dropdown-content
+          a(href="#Feedback") Feedback
+          a(href="#Penggolongan Usia") Penggolongan Usia
+          a(href="#Lokasi Perpusum") Lokasi Perpusum
+          a(href="#Biodata Penerbit") Biodata Penerbit
+      .dropdown
+        button.dropbtn Activity >
+        .dropdown-content
+          a(href="#berita") Berita
+          a(href="#pengumuman") Pengumuman
+      .dropdown
+        button.dropbtn Recommendation >
+        .dropdown-content
+          a(href="#Direkomendasikan") Direkomendasikan
+          a(href="#Review Pengguna") Review Pengguna
       a(href="#search") 🔍Search
       button.lang-button English
