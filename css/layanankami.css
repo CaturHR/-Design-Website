@@ -44,8 +44,8 @@ button {
 
 button:hover {
     background-color: #45a049;
-}[21:48, 10/23/2024] 🤜🏻 Haidar PENS: >
-[21:48, 10/23/2024] 🤜🏻 Haidar PENS: * {
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
