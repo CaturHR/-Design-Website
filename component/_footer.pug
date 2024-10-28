@@ -1,28 +1,29 @@
 mixin footer
-  footer.footer
-          .social-icons
-              img(src="Twitter.png" alt="Icon X")
-              img(src="Instagram.jpg" alt="Instagram")
-              img(src="Youtube.webp" alt="YouTube")
-              img(src="Facebook.avif" alt="Facebook")
-          
-          .info
-              div
-                  h3 Jam Operasional
-                  p Senin - Jumat &gt; 07.00 - 17.00
-                  p Sabtu - Minggu &gt; 08.00 - 17.00
-                  p Cuti bersama/libur nasional &gt; tutup
-                  p Hak Cipta 2024 &copy; perpusum indonesia
-              div
-                  h3 Layanan unggulan
-                  p &gt; Buku Terbaru
-                  p &gt; Buku Terpopuler
-                  p &gt; Majalah
-              div
-                  h3 Kontak Kami:
-                  p Telepon: 0812345678
-                  p Instagram: perpusum_
-                  p Email: perpusum@gmail.com
-                  p Facebook: perpusum23
-                  p Twitter: @perpusum02
-                  p Alamat: Jl raya lenteng No 2 sumenep
+  footer.footer-container
+    .footer-social
+      a(href="https://www.instagram.com", target="_blank") 
+        i(class="fa fa-instagram")
+      a(href="https://www.twitter.com", target="_blank") 
+        i(class="fa fa-twitter")
+      a(href="https://www.facebook.com", target="_blank") 
+        i(class="fa fa-facebook")
+    .footer-info
+      .footer-section
+        h4 Jam Operasional
+        p Senin-Jumat > 07:00-17:00
+        p Sabtu-Minggu > 08:00-17:00
+        p cuti bersama/libur nasional > tutup
+        p Hak Cipta 2024 @perpusum Indonesia
+      .footer-section
+        h4 Layanan Unggulan
+        p > Buku Terbaru
+        p > Buku Terpopuler
+        p > Majalah
+      .footer-section
+        h4 Kontak Kami:
+        p Telepon: 0812345678
+        p Instagram: perpusum_
+        p Email: perpusum@gmail.com
+        p Facebook: perpusum23
+        p Twitter: @perpusum02
+        p Alamat: Jl. Raya Lenteng No 2 Sumenep

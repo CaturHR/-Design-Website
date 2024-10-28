@@ -1,135 +1,14 @@
-include Komponen/Header/pug/header.pug
-include Komponen/Article Card Berita/pug/Article Card Berita.pug
-include Komponen/Footer/pug/footer.pug
+extends component/_template.pug
+block content
+  +layananKami(['Buku Terbaru', 'Buku Terpopuler', 'Majalah'])
+  h1 Berita Terbaru
+    .news-grid
+      +newsItem("Berita memperingati Kemerdekaan", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "John Doe", "17 Agustus 2014")
+      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Penulis 2", "7 Agustus 1980")
+      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Sasaki Ojoho Danamo", "24 Juni 1984")
+      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Andrie Artha", "1 September 2005")
+      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Tana Uje", "15 Januari 2015")
+      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Ayah Azhar", "9 Januari 2014")
+    a.view-more(href="#") View More
 
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Berita
-        doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Example Page with Navbar and Cards
-    link(rel="stylesheet" href="/path/to/your/style.css")
-
-  body
-    // Navbar Section
-    .navbar
-      a(href="#home") Home
-      .dropdown
-        button.dropbtn Profile >
-        .dropdown-content
-          a(href="#VisiMisi") Visi dan Misi
-          a(href="#StrukturOrganisasi") Struktur Organisasi
-          a(href="#Perkembangan") Perkembangan
-          a(href="#UnitKerja") Unit Kerja
-      .dropdown
-        button.dropbtn Service >
-        .dropdown-content
-          a(href="#Feedback") Feedback
-          a(href="#PenggolonganUsia") Penggolongan Usia
-          a(href="#LokasiPerpusum") Lokasi Perpusum
-          a(href="#BiodataPenerbit") Biodata Penerbit
-      .dropdown
-        button.dropbtn Activity >
-        .dropdown-content
-          a(href="#Berita") Berita
-          a(href="#Pengumuman") Pengumuman
-      .dropdown
-        button.dropbtn Recommendation >
-        .dropdown-content
-          a(href="#Direkomendasikan") Direkomendasikan
-          a(href="#ReviewPengguna") Review Pengguna
-      a(href="#search") 🔍Search
-      button.lang-button English
-
-    // Cards Section
-    .container
-      .card
-        img(src="Berita.jpg" alt="Newspaper Image")
-        h3 Title 1
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        span Penulis: Puti Wijaya
-        span 20 Maret 1988
-      .card
-        img(src="Berita.jpg" alt="Newspaper Image")
-        h3 Title 2
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        span Penulis: Risa Sisi
-        span 26 September 2017
-      .card
-        img(src="Berita.jpg" alt="Newspaper Image")
-        h3 Title 3
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        span Penulis: Dewi Lestari
-        span 24 Mei 2001
-
-    // Navigation Buttons
-    .navigation
-      button Prev
-      button Next
-
-    // Footer Section
-    .footer
-      .social-icons
-        img(src="Twitter.png" alt="Icon X")
-        img(src="Instagram.jpg" alt="Instagram")
-        img(src="Youtube.webp" alt="YouTube")
-        img(src="Facebook.avif" alt="Facebook")
-      .info
-        div
-          h3 Jam Operasional
-          p Senin - Jumat > 07.00 - 17.00
-          p Sabtu - Minggu > 08.00 - 17.00
-          p Cuti bersama/libur nasional > tutup
-          p Hak Cipta 2024 © perpusum indonesia
-        div
-          h3 Layanan Unggulan
-          p Buku Terbaru
-          p Buku Terpopuler
-          p Majalah
-        div
-          h3 Kontak Kami
-          p Telepon: 0812345678
-          p Instagram: perpusum_
-          p Email: perpusum@gmail.com
-          p Facebook: perpusum23
-          p Twitter: @perpusum02
-          p Alamat: Jl raya lenteng No 2 sumenep
-
-mixin dropdown(title, items)
-  .dropdown
-    button.dropbtn= title + ' >'
-    .dropdown-content
-      each item in items
-        a(href=item.href)= item.text
-        
-    body 
-      +dropdown('Profile', [
-        {text: 'Visi dan Misi', href: '#Visi dan Misi'},
-        {text: 'Struktur Organisasi', href: '#Struktur Organisasi'},
-        {text: 'Perkembangan', href: '#Perkembangan'},
-        {text: 'Unit Kerja', href: '#Unit Kerja'}
-      ])
-      +dropdown('Service', [
-        {text: 'Feedback', href: '#Feedback'},
-        {text: 'Penggolongan Usia', href: '#Penggolongan Usia'},
-        {text: 'Lokasi Perpusum', href: '#Lokasi Perpusum'},
-        {text: 'Biodata Penerbit', href: '#Biodata Penerbit'}
-      ])
-      +dropdown('Activity', [
-        {text: 'Berita', href: '#berita'},
-        {text: 'Pengumuman', href: '#pengumuman'}
-      ])
-      +dropdown('Recommendation', [
-        {text: 'Direkomendasikan', href: '#Direkomendasikan'},
-        {text: 'Review Pengguna', href: '#Review Pengguna'}
-      ])
-      a(href="#search") 🔍Search
-      +langButton('English')
-      +footer
-
+  +lokasiPerpusum('Lokasi Perpusum', 'path/to/your/map-image.jpg', 'Jl. Raya Lenteng No 2 Sumenep')

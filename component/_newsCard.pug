@@ -1,0 +1,10 @@
+// component/mixins/newsItem.pug
+mixin newsItem(title, imgSrc, description, author, date)
+  .news-item
+    h2= title
+    img(src=imgSrc alt="Newspaper image")
+    p= description
+    p.author
+      | Penulis: #{author}
+      br
+      | #{date}
