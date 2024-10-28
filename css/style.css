@@ -3,11 +3,18 @@
   background-color: #4caf50;
   padding: 10px;
   display: flex;
-  justify-content: center; /* Mengubah menjadi center */
   align-items: center;
   font-family: Arial, sans-serif;
   position: relative;
 }
+
+/* Gambar Logo */
+.navbar-logo {
+  width: 240px;
+  height: 58px;
+  margin-right: 285px; /* Memberikan jarak antara gambar dan item navbar */
+}
+
 
 /* Kontainer untuk item navbar */
 .nav {
@@ -111,6 +118,10 @@
   }
 }
 
+
+
+
+
 /* Style untuk footer */
 .footer-container {
   background-color: #4caf50;
@@ -173,9 +184,11 @@
 
 /* Layanan Section */
 .layanan-section {
+  font-size: 24pt;
   text-align: center;
   margin-top: 20px;
   font-family: Arial, sans-serif;
+  color: #188D00;
 }
 
 .layanan-container {
@@ -258,6 +271,8 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 89px;
+  padding-bottom: 90px;
 }
 
 h1 {
@@ -304,18 +319,20 @@ h1 {
 
 .view-more {
   display: block;
-  width: 80px; /* Kurangi lebar tombol */
+  width: 160px; /* Kurangi lebar tombol */
+  font-size: 20pt;
+  padding: 9px;
   margin: 15px auto;
-  padding: 8px;
-  background-color: #00a000;
-  color: #ffffff;
+  background-color: #52A940;
+  color: #000000;
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .view-more:hover {
-  background-color: #008000;
+  color: #0015FF;
+  background-color: #7DBF70;
 }
 
 /* Responsif untuk layar lebih kecil */
@@ -339,7 +356,7 @@ h1 {
 
 .lokasi-map img {
   width: 100%;
-  max-width: 500px;
+  max-width: 1313px;
   height: auto;
   border-radius: 10px;
 }
@@ -382,7 +399,7 @@ input[type="text"],
 input[type="email"] {
   width: 100%;
   padding: 10px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 

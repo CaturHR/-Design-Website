@@ -1,5 +1,6 @@
 mixin navbar
   nav.navbar
+    img.navbar-logo(src="../img/logo.png" alt="Logo")
     ul.nav
       li.nav-item
         a(href="#") Home
@@ -18,19 +19,13 @@ mixin navbar
         a(href="#") Service >
         ul.dropdown
           li.dropdown-item
-            a(href="#") Layanan Umum >
-            ul.dropdown
-              li.dropdown-item
-                a(href="#") Feedback
-              li.dropdown-item
-                a(href="#") Penggolongan Usia
+            a(href="#") Feedback
           li.dropdown-item
-            a(href="#") Layanan Penerbit >
-            ul.dropdown
-              li.dropdown-item
-                a(href="#") Penerbit Buku
-              li.dropdown-item
-                a(href="#") Penerbit Jurnal
+            a(href="#") Penggolongan Usia
+          li.dropdown-item
+            a(href="#") Lokasi Perpusum
+          li.dropdown-item
+            a(href="#") Biodata Penerbit
       li.nav-item
         a(href="#") Activity >
         ul.dropdown
