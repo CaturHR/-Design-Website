@@ -1,14 +1,25 @@
-extends component/_template.pug
-block content
-  +layananKami(['Buku Terbaru', 'Buku Terpopuler', 'Majalah'])
-  h1 Berita Terbaru
-    .news-grid
-      +newsItem("Berita memperingati Kemerdekaan", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "John Doe", "17 Agustus 2014")
-      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Penulis 2", "7 Agustus 1980")
-      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Sasaki Ojoho Danamo", "24 Juni 1984")
-      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Andrie Artha", "1 September 2005")
-      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Tana Uje", "15 Januari 2015")
-      +newsItem("Title", "img/Berita.jpg", "Lorem ipsum dolor amet, consectetur adipiscing elit. Duis pulvinar tortor hendrerit porta.", "Ayah Azhar", "9 Januari 2014")
-    a.view-more(href="#") View More
+extends komponen/pug/_template.pug
 
+block content
+  // Layanan Kami Section
+  h2.header-services Layanan Kami
+  .services-container
+    +serviceItem('Buku Terbaru', '#')
+    +serviceItem('Buku Terpopuler', '#')
+    +serviceItem('Majalah', '#')
+
+  // Berita Section
+  h1.header-berita Berita
+  .container-berita
+    +newsItem('Berita memperingati Kemerdekaan', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'John Doe', '7 Agustus 2014')
+    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Pramoedya Ananta Toer', '1 Agustus 1960')
+    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Sapardi Djoko Damono', '24 Juni 1984')
+    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Andre Hirata', '5 September 2005')
+    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Tere Liye', '15 Februari 2015')
+    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Ayah Azhar', '9 Januari 2018')
+
+  .button-container-berita
+    button View More
+
+  // Lokasi Perpusum Section
   +lokasiPerpusum('Lokasi Perpusum', 'https://upload.wikimedia.org/wikipedia/id/f/f0/Peta_Sumenep_Kepulauan.png', 'Jl. Raya Lenteng No 2 Sumenep')

@@ -1,0 +1,14 @@
+mixin formGroup(labelText, inputId, inputType, placeholderText, smallText)
+  .form-group-feedback
+    label(for=inputId) #{labelText}
+    input(type=inputType id=inputId placeholder=placeholderText)
+    small= smallText
+
+mixin radioGroup(labelText, options)
+  .form-group-feedback
+    label #{labelText}
+    .radio-group-feedback
+      each option in options
+        label
+          input(type="radio" name="feedback" value=option.value)
+          | #{option.label}

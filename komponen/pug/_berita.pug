@@ -1,0 +1,7 @@
+mixin newsItem(title, imgUrl, content, author, date)
+  .news-item-berita
+    h2= title
+    img(src=imgUrl alt="Stack of newspapers" width="300" height="200")
+    p= content
+    p.author-berita Penulis: #{author}
+    p.date-berita= date

@@ -1,0 +1,6 @@
+mixin ageCategory(title, books)
+  .category-age
+    h2.category-title #{title}
+    .books-container
+      each book in books
+        .book-item #{book}
