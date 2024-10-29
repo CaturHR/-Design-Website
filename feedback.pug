@@ -1,32 +1,14 @@
-extends component/_template.pug
+extends komponen/pug/_template.pug
 
 block content
-  .container
-    h1 Form Feedback
-    p Kami senang bisa mengetahui umpan balik anda
-
-    form(action="/submit-feedback" method="POST")
-      // Field Nama
-      .form-group
-        label(for="name") Nama *
-        input#name(type="text" name="name" placeholder="Type here..." required)
-
-      // Field Email
-      .form-group
-        label(for="email") E-mail *
-        input#email(type="email" name="email" placeholder="contoh@contoh.com" required)
-
-      // Field Tipe Feedback
-      .form-group
-        label Tipe Feedback :
-        .form-options
-          label
-           input(type="radio" name="feedbackType" value="Penilaian" required) 
-           | Penilaian
-          label
-           input(type="radio" name="feedbackType" value="Saran/Pertanyaan") 
-           | Saran / Pertanyaan
-
-      // Tombol Submit
-      .form-group
-        button(type="submit") Next
+  .container-feedback
+    h1.title-feedback Form Feedback
+    p.text-feedback Kami senang bisa mengetahui umpan balik anda
+    +formGroup('Nama *', 'name', 'text', 'Type here.....', 'Nama anda')
+    +formGroup('E-mail *', 'email', 'email', 'Type here.....', 'contoh@contoh.com')
+    +radioGroup('Tipe Feedback :', [
+      { value: 'penilaian', label: 'Penilaian' },
+      { value: 'saran', label: 'Saran / Pertanyaan' }
+    ])
+    button.submit-btn-feedback Next
+    .star-feedback &#9733;

@@ -1,0 +1,17 @@
+extends komponen/pug/_template.pug
+
+block content
+  .container-perkembangan
+    h1.title-perkembangan Perkembangan Perpusum
+    .row-perkembangan
+      +iconColumn('fas fa-images')
+      .arrow-perkembangan
+        i(class="fas fa-arrow-right")
+      +iconColumn('fas fa-images')
+      .arrow-perkembangan
+        i(class="fas fa-arrow-right")
+      +iconColumn('fas fa-images')
+    .row-perkembangan
+      +textColumn('Lorem ipsum', 'Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.')
+      +textColumn('Lorem ipsum', 'Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.')
+      +textColumn('Lorem ipsum', 'Lorem ipsum odor amet, consectetuer adipiscing elit. Dapibus arcu vestibulum torquent hendrerit porttitor.')

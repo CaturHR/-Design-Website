@@ -1,0 +1,12 @@
+mixin publisherCard(name, imageUrl, founded, address, website, email, phone, bookType, vision, achievement)
+  .card-biodata
+    img(src=imageUrl, alt="Logo " + name)
+    h2.card-title= name
+    p.card-content #{founded}
+    p.card-content #{address}
+    p.card-content #{website}
+    p.card-content #{email}
+    p.card-content #{phone}
+    p.card-content #{bookType}
+    p.card-content #{vision}
+    p.card-content #{achievement}

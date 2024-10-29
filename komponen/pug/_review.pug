@@ -1,0 +1,15 @@
+mixin reviewCard(name, date, review, imageUrl, recommendations)
+  .card-review
+    img(src=imageUrl, alt="Book cover image", class="review-image")
+    .user-name= name
+    .review-date= date
+    .review-text= review
+    .helpful
+      | Apakah ulasan ini membantu
+      button.helpful-btn Ya
+      button.helpful-btn Tidak
+    .recommendations-container
+      | Rekomendasi Buku :
+      .recommendations
+        each recommendation in recommendations
+          img(src=recommendation, alt="Recommended book cover", class="recommendation-image")
