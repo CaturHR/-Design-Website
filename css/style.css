@@ -1,6 +1,6 @@
 /* Style untuk navbar */
 .navbar {
-  background-color: #4caf50;
+  background-color: #188D00;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@
 
 /* Style untuk footer */
 .footer-container {
-  background-color: #4caf50;
+  background-color: #188D00;
   color: white;
   padding: 20px;
   display: flex;
@@ -199,7 +199,7 @@
 }
 
 .layanan-item {
-  background-color: #4caf50;
+  background-color: #188D00;
   color: white;
   padding: 8px 15px; /* Mengurangi padding */
   border-radius: 5px;
@@ -208,7 +208,7 @@
 }
 
 .layanan-item:hover {
-  background-color: #388e3c;
+  background-color: #52A940;
 }
 
 .layanan-item a {
@@ -276,8 +276,9 @@ body {
 }
 
 h1 {
-  color: #00a000;
-  text-align: left;
+  color: #188D00;
+  font-size: 24pt;
+  text-align: center;
 }
 
 .news-grid {
@@ -350,6 +351,8 @@ h1 {
 
 /* css untuk lokasi perpus */
 .lokasi-container {
+  color: #188D00;
+  font-size: 24pt;
   text-align: center;
   margin-top: 30px;
 }
