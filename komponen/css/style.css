@@ -281,14 +281,15 @@ h1 {
   text-align: center;
   color: green;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 90px;
 }
 
 .services-container {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 80px;
+  margin-bottom: 160px;
 }
 
 .service-item-services {
@@ -297,6 +298,9 @@ h1 {
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* map css */
