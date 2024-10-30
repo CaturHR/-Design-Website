@@ -184,7 +184,7 @@ h1 {
   cursor: pointer;
 }
 
-/* Media query untuk tampilan*/
+/* Media query untuk tampilan mobile*/
 @media (max-width: 768px) {
   .footer-info {
     flex-direction: column;
