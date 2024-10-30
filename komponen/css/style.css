@@ -5,7 +5,7 @@ body {
 
 h1 {
   display: block;
-  font-size: 2em;
+  font-size: 48px;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
@@ -279,7 +279,6 @@ h1 {
 
 .header-services {
   text-align: center;
-  font-size: 24px;
   color: green;
   font-weight: bold;
   margin-top: 20px;
@@ -333,16 +332,21 @@ h1 {
 
 .header-vision {
   color: green;
+  margin-top: 106px;
 }
 
 .content-vision {
   margin: 20px auto;
+  margin-bottom: 105px;
   width: 80%;
   text-align: left;
 }
 
 .subtitle-vision {
   color: black;
+  font-size: 40px;
+  margin-bottom: 45px;
+  margin-top: 45px;
 }
 
 .text-vision {
@@ -358,12 +362,14 @@ h1 {
   background-color: white;
   margin: 0;
   padding: 0;
+  margin-top: 51px;
+  margin-bottom: 52px;
 }
 
 .title-unit {
   color: green;
-  font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 0px;
 }
 
 .star-icon {
@@ -395,6 +401,8 @@ h1 {
   background-color: white;
   margin: 0;
   padding: 0;
+  margin-top: 81px;
+  margin-bottom: 61px;
 }
 
 /* Title Style */
@@ -414,6 +422,8 @@ h1 {
 .column-perkembangan {
   flex: 1;
   padding: 20px;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 /* Icon Style */
@@ -447,11 +457,11 @@ body-feedback {
   width: 80%;
   margin: 0 auto;
   text-align: left;
+  margin-bottom: 110px;
 }
 
 .title-feedback {
   color: #008000;
-  font-size: 24px;
   text-align: center;
 }
 
@@ -464,6 +474,7 @@ body-feedback {
 .form-group-feedback {
   background-color: #32cd32;
   padding: 20px;
+  padding-right: 40px;
   margin: 20px 0;
   border-radius: 5px;
 }
@@ -514,6 +525,7 @@ body-feedback {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  float: right;
 }
 
 .submit-btn-feedback:hover {
@@ -596,13 +608,15 @@ body-feedback {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .header-announcement {
-  font-size: 24px;
   color: green;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
+  margin-top: 0px;
 }
 
 .star-announcement {
