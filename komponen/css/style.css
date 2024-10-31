@@ -301,6 +301,7 @@ h1 {
   font-size: 36px;
   margin-left: 50px;
   margin-right: 50px;
+  pointer-events: none;
 }
 
 .service-item-services:hover {
