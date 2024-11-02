@@ -1,0 +1,29 @@
+doctype html
+html(lang="id")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Feedback Penilaian
+    link
+
+  body
+    .kontainer-penilaian
+      .input-container
+        p Bagian yang ingin dinilai
+        input(type="text", placeholder="Ketik disini...", required)
+
+      .kontainer-rating(data-kategori="kepuasan")
+        p Kepuasan:
+        .lingkaran(onclick="pilihRating(this)") 1
+        .lingkaran(onclick="pilihRating(this)") 2
+        .lingkaran(onclick="pilihRating(this)") 3
+        .lingkaran(onclick="pilihRating(this)") 4
+        .lingkaran(onclick="pilihRating(this)") 5
+
+      .kontainer-rating(data-kategori="ketepatan")
+        p Ketepatan:
+        .lingkaran(onclick="pilihRating(this)") 1
+        .lingkaran(onclick="pilihRating(this)") 2
+        .lingkaran(onclick="pilihRating(this)") 3
+        .lingkaran(onclick="pilihRating(this)") 4
+        .lingkaran(onclick="pilihRating(this)") 5
