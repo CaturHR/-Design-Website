@@ -59,8 +59,7 @@ h1 {
 
 /* Hover untuk item navbar */
 .nav-item a:hover {
-  background-color: #3e8e41;
-  border-radius: 4px;
+  color: #0015FF;
 }
 
 /* Style untuk dropdown */
@@ -92,7 +91,7 @@ h1 {
 
 /* Hover untuk link dropdown */
 .dropdown-item a:hover {
-  background-color: #f1f1f1;
+  color: #0015FF;
 }
 
 /* Tampilkan dropdown ketika di-hover */
@@ -206,7 +205,7 @@ h1 {
 }
 
 .header-berita {
-  color: #4caf50;
+  color: #188d00;
   margin-top: 20px;
   margin-left: 40px;
 }
@@ -219,7 +218,7 @@ h1 {
 }
 
 .news-item-berita {
-  background-color: #4caf50;
+  background-color: #52A940;
   color: white;
   border-radius: 10px;
   width: 30%;
@@ -279,7 +278,7 @@ h1 {
 
 .header-services {
   text-align: center;
-  color: green;
+  color: #188d00;
   font-weight: bold;
   margin-top: 90px;
 }
@@ -293,7 +292,7 @@ h1 {
 }
 
 .service-item-services {
-  background-color: green;
+  background-color: #52A940;
   color: white;
   padding: 36px 100px;
   text-decoration: none;
@@ -313,7 +312,8 @@ h1 {
   color: #188d00;
   font-size: 24pt;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 160px;
+  margin-bottom: 128px;
 }
 
 .lokasi-map img {
@@ -321,12 +321,15 @@ h1 {
   max-width: 1313px;
   height: auto;
   border-radius: 10px;
+  margin-top: 40px;
 }
 
 .lokasi-alamat p {
-  color: #4caf50;
+  color: #188d00;
   font-size: 1.2em;
   margin-top: 10px;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
 }
 
 /* visi misi */
