@@ -1,0 +1,17 @@
+mixin penilaianInput(label, placeholder)
+      .kontainer-penilaian
+        .input-container
+          p= label
+          input(type="text", placeholder=placeholder, required)
+
+    +penilaianInput("Bagian yang ingin dinilai", "Ketik disini...")
+
+mixin rating(kategori, label)
+        .kontainer-rating(data-kategori=kategori)
+          p= label
+          each num in [1, 2, 3, 4, 5]
+            .lingkaran(onclick="pilihRating(this)")= num
+
+      +rating("kepuasan", "Kepuasan:")
+      +rating("ketepatan", "Ketepatan:")
+    
