@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Penilaian</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .kontainer-penilaian {
+            background-color: #4CAF50;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 1079px;
+            height: 458px;
+            gap: 71px;
+        }
+
+        .kontainer-penilaian p {
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .input-container {
+            background-color: #336B39;
+            padding: 10px;
+            border-radius: 5px;
+            padding-right: 25px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .kontainer-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .lingkaran {
+            width: 75px;
+            height: 75px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.5s;
+            font-size: 30px;
+        }
+
+        .lingkaran.aktif {
+            background-color: blue;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="kontainer-penilaian">
+        <div class="input-container">
+            <p>Bagian yang ingin dinilai</p>
+            <input type="text" placeholder="Ketik disini..." required>
+        </div>
+
+        <div class="kontainer-rating" data-kategori="kepuasan">
+            <p>Kepuasan:</p>
+            <div class="lingkaran" onclick="pilihRating(this)">1</div>
+            <div class="lingkaran" onclick="pilihRating(this)">2</div>
+            <div class="lingkaran" onclick="pilihRating(this)">3</div>
+            <div class="lingkaran" onclick="pilihRating(this)">4</div>
+            <div class="lingkaran" onclick="pilihRating(this)">5</div>
+        </div>
+
+        <div class="kontainer-rating" data-kategori="ketepatan">
+            <p>Ketepatan:</p>
+            <div class="lingkaran" onclick="pilihRating(this)">1</div>
+            <div class="lingkaran" onclick="pilihRating(this)">2</div>
+            <div class="lingkaran" onclick="pilihRating(this)">3</div>
+            <div class="lingkaran" onclick="pilihRating(this)">4</div>
+            <div class="lingkaran" onclick="pilihRating(this)">5</div>
+        </div>
+    </div>
+
+    <script>
+        function pilihRating(elemen) {
+            const kontainer = elemen.parentElement;
+            kontainer.querySelectorAll('.lingkaran').forEach(lingkaran => {
+                lingkaran.classList.remove('aktif');
+            });
+            elemen.classList.add('aktif');
+        }
+    </script>
+</body>
+</html>
+
