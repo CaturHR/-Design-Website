@@ -1,0 +1,12 @@
+extends komponen/pug/_template.pug
+
+block content
+  .kontainer-penilaian
+    +penilaianInput("Bagian yang ingin dinilai", "Ketik disini...")
+    +rating("kepuasan", "Kepuasan:")
+    +rating("ketepatan", "Ketepatan:")
+    .button-feedback-penilaian
+        button.button.prev(onclick="location.href='feedback.html'") Prev
+        button.button.next(onclick="location.href='Makasih.html'") Next
+
+    script(src="script/FeedbackPenilaian.js")
