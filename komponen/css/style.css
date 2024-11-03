@@ -815,7 +815,6 @@ body-penilaian {
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  outline: none;
 }
 
 .kontainer-rating {
@@ -871,13 +870,13 @@ body-penilaian {
   gap: 1000px;
 }
 
-.button-feedback-penilaian button.prev {
+.button-feedback-penilaian button.back {
   background-color: #32cd32;
   color: #fff;
   margin-left: -460px;
 }
 
-.button-feedback-penilaian button.prev:hover {
+.button-feedback-penilaian button.back:hover {
   background-color: #228b22;
 }
 
@@ -888,5 +887,75 @@ body-penilaian {
 }
 
 .button-feedback-penilaian button.next:hover {
+  background-color: #228b22;
+}
+
+/* css Feedback Saran */
+.container-saran{
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 85px;
+}
+
+.title-saran {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin-left: 270px;
+  margin-bottom: 22px;
+}
+
+.textarea-saran {
+  width: 1293px;
+  height: 303px;
+  background-color: #32cd32;
+  border: none;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+  font-family: Arial, sans-serif;
+  margin-right: 28px;
+}
+
+.button-saran {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.button-saran button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  gap: 1000px;
+}
+
+.button-saran button.back {
+  background-color: #32cd32;
+  color: #fff;
+  margin-left: -460px;
+}
+
+.button-saran button.back:hover {
+  background-color: #228b22;
+}
+
+.button-saran button.next {
+  background-color: #32cd32;
+  color: white;
+  margin-left: 1140px;
+}
+
+.button-saran button.next:hover {
   background-color: #228b22;
 }
