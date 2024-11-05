@@ -3,10 +3,17 @@ extends komponen/pug/_template.pug
 block content
   // Layanan Kami Section
   h1.header-services Layanan Kami
+ 
+  - 
+    const services = [
+      { title: 'Buku Terbaru', link: '#' },
+      { title: 'Buku Terpopuler', link: '#' },
+      { title: 'Majalah', link: '#' }
+    ];
+
   .services-container
-    +serviceItem('Buku Terbaru', '#')
-    +serviceItem('Buku Terpopuler', '#')
-    +serviceItem('Majalah', '#')
+    each service in services
+      +serviceItem(service.title, service.link)
 
   // Berita Section
   h1.header-berita Berita
