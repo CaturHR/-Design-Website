@@ -1,12 +1,16 @@
 extends komponen/pug/_template.pug
 
 block content
+  -
+    const dataPengumuman = [
+      { date: "Tanggal 28-08-2024", message: "Pengumuman Hasil Akhir CPNS 2024" },
+      { date: "Date", message: "Announcement......." },
+      { date: "Date", message: "Announcement......." },
+      { date: "Date", message: "Announcement......." }
+    ];
+    
   .container-announcement
     h1.header-announcement Pengumuman
-
-    +announcementComponent("Tanggal 28-08-2024", "Pengumuman Hasil Akhir CPNS 2024")
-    +announcementComponent("Date", "Announcement.......")
-    +announcementComponent("Date", "Announcement.......")
-    +announcementComponent("Date", "Announcement.......")
-
+    each pengumuman in dataPengumuman
+      +announcementComponent(pengumuman.date, pengumuman.message)
     button.next-button-announcement Next
