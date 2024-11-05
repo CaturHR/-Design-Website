@@ -1,18 +1,23 @@
 extends komponen/pug/_template.pug
 
 block content
+  -
+    const dataUnitKerja = [
+      'Biro SDM dan Umum',
+      'Biro Perencanaan dan Keuangan',
+      'Biro Hukum, Organisasi, Kerjasama dan Humas',
+      'Pusat Data dan Informasi',
+      'Pusat Pembinaan Pustakawan',
+      'Pusat Pendidikan dan Pelatihan',
+      'Pusat Jasa Perpustakaan dan Pengelolaan Naskah Nusantara',
+      'Inspektorat',
+      'Pusat Pengembangan Perpustakaan Umum dan Khusus',
+      'Pusat Preservasi dan Alih Media Bahan Perpustakaan',
+      'Pusat Jasa Perpustakaan dan Pengembangan koleksi Perpustakaan',
+      'Pusat Analisis Perpustakaan dan Pengembangan Budaya Baca'
+    ];
   .container-unit
     h1.title-unit Unit Kerja
     .grid-container-unit
-      +gridItemUnit('Biro SDM dan Umum')
-      +gridItemUnit('Biro Perencanaan dan Keuangan')
-      +gridItemUnit('Biro Hukum, Organisasi, Kerjasama dan Humas')
-      +gridItemUnit('Pusat Data dan Informasi')
-      +gridItemUnit('Pusat Pembinaan Pustakawan')
-      +gridItemUnit('Pusat Pendidikan dan Pelatihan')
-      +gridItemUnit('Pusat Jasa Perpustakaan dan Pengelolaan Naskah Nusantara')
-      +gridItemUnit('Inspektorat')
-      +gridItemUnit('Pusat Pengembangan Perpustakaan Umum dan Khusus')
-      +gridItemUnit('Pusat Preservasi dan Alih Media Bahan Perpustakaan')
-      +gridItemUnit('Pusat Jasa Perpustakaan dan Pengembangan koleksi Perpustakaan')
-      +gridItemUnit('Pusat Analisis Perpustakaan dan Pengembangan Budaya Baca')
+      each unitKerja in dataUnitKerja 
+        +gridItemUnit(unitKerja)
