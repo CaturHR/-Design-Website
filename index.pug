@@ -10,13 +10,57 @@ block content
 
   // Berita Section
   h1.header-berita Berita
+
+  // Data berita sebagai variabel
+  -
+    const newsData = [
+      {
+        title: 'Berita memperingati Kemerdekaan',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'John Doe',
+        date: '7 Agustus 2014'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Pramoedya Ananta Toer',
+        date: '1 Agustus 1960'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Sapardi Djoko Damono',
+        date: '24 Juni 1984'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Andre Hirata',
+        date: '5 September 2005'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Tere Liye',
+        date: '15 Februari 2015'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Ayah Azhar',
+        date: '9 Januari 2018'
+      }
+    ];
+
   .container-berita
-    +newsItem('Berita memperingati Kemerdekaan', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'John Doe', '7 Agustus 2014')
-    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Pramoedya Ananta Toer', '1 Agustus 1960')
-    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Sapardi Djoko Damono', '24 Juni 1984')
-    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Andre Hirata', '5 September 2005')
-    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Tere Liye', '15 Februari 2015')
-    +newsItem('Title', 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg', 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.', 'Ayah Azhar', '9 Januari 2018')
+    each news in newsData
+      +newsItem(news.title, news.image, news.description, news.author, news.date)
 
   .button-container-berita
     button(onclick="location.href='Berita.html'") View More
