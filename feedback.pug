@@ -1,15 +1,25 @@
 extends komponen/pug/_template.pug
 
 block content
+  
+  - 
+    const formGroupsData = [
+      { label: 'Nama *', name: 'name', type: 'text', placeholder: 'Type here.....', value: 'Nama anda' },
+      { label: 'E-mail *', name: 'email', type: 'email', placeholder: 'Type here.....', value: 'contoh@contoh.com' }
+    ];
+
+    const radioOptionsData = [
+      { value: 'penilaian', label: 'Penilaian' },
+      { value: 'saran', label: 'Saran / Pertanyaan' }
+    ];
+
   .container-feedback
     h1.title-feedback Form Feedback
     p.text-feedback Kami senang bisa mengetahui umpan balik anda
-    +formGroup('Nama *', 'name', 'text', 'Type here.....', 'Nama anda')
-    +formGroup('E-mail *', 'email', 'email', 'Type here.....', 'contoh@contoh.com')
-    +radioGroup('Tipe Feedback :', [
-      { value: 'penilaian', label: 'Penilaian' },
-      { value: 'saran', label: 'Saran / Pertanyaan' }
-    ])
+    each form in formGroupsData
+      +formGroup(form.label, form.name, form.type, form.placeholder, form.value)
+
+    +radioGroup('Tipe Feedback :', radioOptionsData)
     button.submit-btn-feedback(onclick="navigate()") Next
 
   script(src="script/feedback.js")

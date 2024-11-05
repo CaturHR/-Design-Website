@@ -2,7 +2,46 @@ extends komponen/pug/_template.pug
 
 block content
   h1.header-title Biodata Penerbit
+
+  -
+    const dataBiodata = [
+      {
+        name: 'Penerbit Harapan',
+        image: 'https://storage.googleapis.com/a1aa/image/Z6Sp3x7eTsRuJCsS0OGeKe9DtfLctMuvevJz54XoeLfOXS11JA.jpg',
+        year: 'Tahun Berdiri: 2005',
+        address: 'Alamat: Jl. Raya Pustaka No. 10, Jakarta, Indonesia',
+        website: 'Website: www.penerbitharapan.com',
+        email: 'Email: info@penerbitharapan.com',
+        phone: 'Telepon: (021) 1234567',
+        genre: 'Jenis Buku: Pendidikan, Fiksi, Non-Fiksi',
+        vision: 'Visi: Meningkatkan kualitas dan kesejahteraan masyarakat melalui pendidikan.',
+        achievement: 'Prestasi: Penghargaan Penerbit Terbaik 2020 dari Asosiasi Penerbit Indonesia'
+      },
+      {
+        name: 'Penerbit Bintang',
+        image: 'https://storage.googleapis.com/a1aa/image/xoyb9QarUcIZLNfjc0ke2I3aKL6WlewNH0aitHDnuPZQJVXnA.jpg',
+        year: 'Tahun Berdiri: 2010',
+        address: 'Alamat: Jl. Bintang No. 5, Bandung, Indonesia',
+        website: 'Website: www.penerbitbintang.com',
+        email: 'Email: info@penerbitbintang.com',
+        phone: 'Telepon: (022) 9876543',
+        genre: 'Jenis Buku: Fiksi, Buku Anak, Kesehatan',
+        vision: 'Visi: Menjadi pilihan utama pembaca untuk buku berkualitas.',
+        achievement: 'Prestasi: Penghargaan Penerbit Terbaik 2020 dari Asosiasi Penerbit Indonesia'
+      },
+      {
+        name: 'Penerbit Karya Cipta',
+        image: 'https://storage.googleapis.com/a1aa/image/0hm9eUudiftwBkw1bxlwnQXTkCWnLoJLYe91yARiKnbSJVXnA.jpg',
+        year: 'Tahun Berdiri: 2015',
+        address: 'Alamat: Jl. Karya No. 20, Yogyakarta, Indonesia',
+        website: 'Website: www.penerbitkaryacipta.com',
+        email: 'Email: info@penerbitkaryacipta.com',
+        phone: 'Telepon: (0274) 7654321',
+        genre: 'Jenis Buku: Fiksi, Buku Pendidikan',
+        vision: 'Visi: Menyebarkan ilmu dan pengetahuan melalui buku.',
+        achievement: 'Prestasi: Penghargaan Buku Terbaik dalam Program Unggulan Diskusi Buku Bulanan'
+      }
+    ];
   .container-biodata
-    +publisherCard('Penerbit Harapan', 'https://storage.googleapis.com/a1aa/image/Z6Sp3x7eTsRuJCsS0OGeKe9DtfLctMuvevJz54XoeLfOXS11JA.jpg', 'Tahun Berdiri: 2005', 'Alamat: Jl. Raya Pustaka No. 10, Jakarta, Indonesia', 'Website: www.penerbitharapan.com', 'Email: info@penerbitharapan.com', 'Telepon: (021) 1234567', 'Jenis Buku: Pendidikan, Fiksi, Non-Fiksi', 'Visi: Meningkatkan kualitas dan kesejahteraan masyarakat melalui pendidikan.', 'Prestasi: Penghargaan Penerbit Terbaik 2020 dari Asosiasi Penerbit Indonesia')
-    +publisherCard('Penerbit Bintang', 'https://storage.googleapis.com/a1aa/image/xoyb9QarUcIZLNfjc0ke2I3aKL6WlewNH0aitHDnuPZQJVXnA.jpg', 'Tahun Berdiri: 2010', 'Alamat: Jl. Bintang No. 5, Bandung, Indonesia', 'Website: www.penerbitbintang.com', 'Email: info@penerbitbintang.com', 'Telepon: (022) 9876543', 'Jenis Buku: Fiksi, Buku Anak, Kesehatan', 'Visi: Menjadi pilihan utama pembaca untuk buku berkualitas.', 'Prestasi: Penghargaan Penerbit Terbaik 2020 dari Asosiasi Penerbit Indonesia')
-    +publisherCard('Penerbit Karya Cipta', 'https://storage.googleapis.com/a1aa/image/0hm9eUudiftwBkw1bxlwnQXTkCWnLoJLYe91yARiKnbSJVXnA.jpg', 'Tahun Berdiri: 2015', 'Alamat: Jl. Karya No. 20, Yogyakarta, Indonesia', 'Website: www.penerbitkaryacipta.com', 'Email: info@penerbitkaryacipta.com', 'Telepon: (0274) 7654321', 'Jenis Buku: Fiksi, Buku Pendidikan', 'Visi: Menyebarkan ilmu dan pengetahuan melalui buku.', 'Prestasi: Penghargaan Buku Terbaik dalam Program Unggulan Diskusi Buku Bulanan')
+    each biodata in dataBiodata
+      +publisherCard(biodata.name, biodata.image, biodata.year, biodata.address, biodata.website, biodata.email, biodata.phone, biodata.genre, biodata.vision, biodata.achievement)
