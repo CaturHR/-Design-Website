@@ -257,16 +257,15 @@ h1 {
 
 .button-container-berita button {
   background-color: #52A940;
-  color: black;
+  color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
 .button-container-berita button:hover {
-  background-color: #7DBF70;
-  color: #0015FF;
+  background-color: #228b22;
 }
 
 /* layanan kami */
@@ -537,7 +536,7 @@ body-feedback {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   float: right;
 }
@@ -568,24 +567,24 @@ body-feedback {
 .container-age-categories {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  gap: 200px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .category-age {
-  background-color: #2e8b57;
+  background-color: #a7c957;
   padding: 20px;
   border-radius: 15px;
   width: 250px;
 }
 
 .category-age:nth-child(2) {
-  background-color: #3cb371;
+  background-color: #6a994e;
 }
 
 .category-age:nth-child(3) {
-  background-color: #9acd32;
+  background-color: #386641;
 }
 
 .category-title {
@@ -648,7 +647,7 @@ body-feedback {
 }
 
 .date-box {
-  background-color: green;
+  background-color: #52A940;
   color: white;
   padding: 10px;
   border-radius: 5px 5px 0 0;
@@ -662,25 +661,30 @@ body-feedback {
 
 /* Next button style */
 .next-button-announcement {
-  background-color: green;
+  background-color: #52A940;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   text-align: center;
   display: block;
-  margin: 0 auto;
+  margin-left: 1450px;
+}
+
+.next-button-announcement:hover {
+  background-color: #228b22;
 }
 
 /* biodata css */
 .container-biodata {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   justify-items: center;
   margin-top: 28px;
-  margin-bottom: 27px;
+  margin-bottom: 40px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 /* Card style for each publisher */
@@ -718,14 +722,14 @@ body-feedback {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 200px;
   margin-top: 46px;
   margin-bottom: 46px;
 }
 
 /* Review card styling */
 .card-review {
-  background-color: #a5d6a7;
+  background-color: #9bdd8b;
   border-radius: 10px;
   padding: 20px;
   width: 300px;
@@ -767,6 +771,7 @@ body-feedback {
   padding: 5px 10px;
   margin: 0 5px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .recommendations-container {
@@ -876,6 +881,7 @@ body-penilaian {
   background-color: #32cd32;
   color: #fff;
   margin-left: -460px;
+  border-radius: 25px;
 }
 
 .button-feedback-penilaian button.back:hover {
@@ -886,6 +892,7 @@ body-penilaian {
   background-color: #32cd32;
   color: white;
   margin-left: 1140px;
+  border-radius: 25px;
 }
 
 .button-feedback-penilaian button.next:hover {
@@ -946,6 +953,7 @@ body-penilaian {
   background-color: #32cd32;
   color: #fff;
   margin-left: -460px;
+  border-radius: 25px;
 }
 
 .button-saran button.back:hover {
@@ -956,6 +964,7 @@ body-penilaian {
   background-color: #32cd32;
   color: white;
   margin-left: 1140px;
+  border-radius: 25px;
 }
 
 .button-saran button.next:hover {
@@ -967,7 +976,8 @@ body-penilaian {
   width: 80%;
   margin: 0 auto;
   text-align: left;
-  margin-bottom: 110px;
+  margin-bottom: 70px;
+  margin-top: 30px;
   display: flex;
 }
 
@@ -992,8 +1002,8 @@ body-penilaian {
   font-size: 39px;
   color: #555;
   margin-right: 175px;
-  margin-bottom: 51px;
-  margin-top: 51px;
+  margin-bottom: 67px;
+  margin-top: 67px;
 }
 
 .confirm-button {
@@ -1002,10 +1012,10 @@ body-penilaian {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   float: right;
-  margin-left: 400px;
+  margin-left: 450px;
 }
 
 .confirm-button:hover {
