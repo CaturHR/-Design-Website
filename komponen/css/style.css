@@ -435,6 +435,7 @@ h1 {
   padding: 20px;
   padding-left: 130px;
   padding-right: 130px;
+  cursor: pointer;
 }
 
 /* Icon Style */
@@ -450,10 +451,18 @@ h1 {
   margin: 0 20px;
 }
 
+.judul-perkembangan {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 /* Text Style */
 .text-perkembangan {
   font-size: 18px;
   color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 /* Feadback css */
@@ -623,6 +632,7 @@ body-feedback {
   text-align: left;
   margin-top: 35px;
   margin-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 .header-announcement {
@@ -667,14 +677,30 @@ body-feedback {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  text-align: center;
   display: block;
-  margin-left: 1450px;
+  float: right;
 }
 
 .next-button-announcement:hover {
   background-color: #228b22;
 }
+
+/* Prev button style */
+.prev-button-announcement {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+}
+
+.prev-button-announcement:hover {
+  background-color: #228b22;
+}
+
 
 /* biodata css */
 .container-biodata {
