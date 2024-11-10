@@ -1,0 +1,19 @@
+extends komponen/pug/_template.pug
+
+block content
+  .konten-kepala
+    .container-kepala
+      +profile("Prof. Gufron, M.A., Ph.D.", "Kepala Perpustakaan")
+      
+    .team
+      - 
+        const teamMembersData = [
+          { name: "Ahmad", position: "Asisten Kepala Perpustakaan" },
+          { name: "Rina", position: "Pustakawan Senior" },
+          { name: "Budi", position: "Pustakawan Junior" }
+        ];
+
+      each member in teamMembersData
+        +teamMember(member.name, member.position)
+    .button-kepala-perpus
+      button.button-back-kepalaPerpus(onclick="location.href='strukturorganisasi.html'") Back
