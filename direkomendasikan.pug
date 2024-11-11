@@ -1,0 +1,19 @@
+extends komponen/pug/_template.pug
+
+block content
+  .kontainer-direkomendasikan
+    h1.header-direkomendasikan
+    .konten-direkomendasikan
+      .direkomendasikan1
+        img.direkomendasikan(src="img/rekomendasi1.png", alt="gambar utama")
+        .direkomendasikan1-1
+          +buku(gambarBuku)
+          +buku(gambarBuku)
+      .direkomendasikan2
+        +buku(gambarBuku)
+        +buku(gambarBuku)
+        +buku(gambarBuku)
+        +buku(gambarBuku)
+        +buku(gambarBuku)
+        +buku(gambarBuku)
+        +buku(gambarBuku)
