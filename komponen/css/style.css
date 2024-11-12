@@ -1155,6 +1155,7 @@ body-penilaian {
   margin-bottom: 100px;
 }
 
+/* css Direkomendasikan */
 .book-cover {
   width: 150px;
   height: 220px;
@@ -1220,4 +1221,186 @@ img.direkomendasikan {
 
 .title-direkomendasikan {
   text-align: center;
+}
+
+/* css Detail Buku */
+.container-detail-buku  * {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.container-detail-buku {
+  display: flex;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 306px;
+  gap: 160px;
+}
+
+.left-section {
+  width: 60%;
+  padding: 20px;
+  padding-right: 0;
+  height: 35rem;
+}
+
+.top-left {
+  display: flex;
+  justify-content: center;
+}
+
+.top-left-p {
+  margin-left: 20px;
+  line-height: 70px;    
+}
+
+.right-section {
+  width: 40%;
+  padding: 20px;
+  padding-right: 48px;
+}
+
+.detailBuku {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.detailBuku img {
+  height: 300px;
+  width: 200px
+}
+
+.info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.info-detailbuku{
+  font-size: 14px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.abstract {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.abstract::before {
+  content: "✔";
+  color: black;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.date::before {
+  content: "📅";
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 17px;
+}
+
+.description p {
+  margin-left: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 8px;
+  width: 80%;
+  border: 2px solid #4caf50;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search button {
+  background-color: #4caf50;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.other-books {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-item-other {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.book-item-other img {
+  width: 50px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+.book-item-other .title {
+  font-size: 14px;
+}
+
+.button-back-detailBuku {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-top: -19px;
+  margin-left: 365px;
+}
+
+.button-back-detailBuku:hover {
+  background-color: #228b22;
+}
+
+.konten-detail {
+  margin: 90px 0;
+  justify-self: center;
 }
