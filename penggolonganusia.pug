@@ -1,8 +1,14 @@
 extends komponen/pug/_template.pug
 
 block content
+  -
+    const dataPenggolonganUsia = [
+      { category: 'Buku untuk Anak anak', covers: ['YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER'] },
+      { category: 'Buku untuk Remaja', covers: ['YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER'] },
+      { category: 'Buku untuk Dewasa', covers: ['YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER'] }
+    ];
+
   h1.header-age-classification Penggolongan Usia
   .container-age-categories
-    +ageCategory('Buku untuk Anak anak', ['YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER'])
-    +ageCategory('Buku untuk Remaja', ['YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER'])
-    +ageCategory('Buku untuk Dewasa', ['YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER', 'YOUR BOOK COVER'])
+    each penggolonganUsia in dataPenggolonganUsia
+      +ageCategory(penggolonganUsia.category, penggolonganUsia.covers)

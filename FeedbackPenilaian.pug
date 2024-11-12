@@ -1,10 +1,23 @@
 extends komponen/pug/_template.pug
 
 block content
+
+  -
+    const penilaianData = [
+      { placeholder: "Bagian yang ingin dinilai", label: "Ketik disini..." }
+    ];
+
+    const ratingData = [
+      { name: "kepuasan", label: "Kepuasan:" },
+      { name: "ketepatan", label: "Ketepatan:" }
+    ];
+
   .kontainer-penilaian
-    +penilaianInput("Bagian yang ingin dinilai", "Ketik disini...")
-    +rating("kepuasan", "Kepuasan:")
-    +rating("ketepatan", "Ketepatan:")
+    each penilaian in penilaianData
+      +penilaianInput(penilaian.placeholder, penilaian.label)
+
+    each rating in ratingData
+      +rating(rating.name, rating.label)
     .button-feedback-penilaian
         button.button.back(onclick="location.href='feedback.html'") Back
         button.button.next(onclick="location.href='Makasih.html'") Next

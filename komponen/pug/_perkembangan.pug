@@ -1,8 +1,10 @@
 mixin iconColumn(iconClass)
   .column-perkembangan
-    i(class=iconClass + " icon-perkembangan")
+    a(href='perkembangan1.html')
+      i(class=iconClass + " icon-perkembangan")
 
 mixin textColumn(title, description)
   .column-perkembangan
-    h2= title
-    p.text-perkembangan= description
+    a(href='perkembangan1.html')
+      h2.judul-perkembangan= title
+      p.text-perkembangan= description

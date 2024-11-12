@@ -257,16 +257,15 @@ h1 {
 
 .button-container-berita button {
   background-color: #52A940;
-  color: black;
+  color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
 .button-container-berita button:hover {
-  background-color: #7DBF70;
-  color: #0015FF;
+  background-color: #228b22;
 }
 
 /* layanan kami */
@@ -436,6 +435,7 @@ h1 {
   padding: 20px;
   padding-left: 130px;
   padding-right: 130px;
+  cursor: pointer;
 }
 
 /* Icon Style */
@@ -451,10 +451,18 @@ h1 {
   margin: 0 20px;
 }
 
+.judul-perkembangan {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 /* Text Style */
 .text-perkembangan {
   font-size: 18px;
   color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 /* Feadback css */
@@ -523,10 +531,12 @@ body-feedback {
 .radio-group-feedback label {
   font-size: 16px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .radio-group-feedback input[type="radio"] {
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .submit-btn-feedback {
@@ -535,7 +545,7 @@ body-feedback {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   float: right;
 }
@@ -566,24 +576,24 @@ body-feedback {
 .container-age-categories {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  gap: 200px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .category-age {
-  background-color: #2e8b57;
+  background-color: #a7c957;
   padding: 20px;
   border-radius: 15px;
   width: 250px;
 }
 
 .category-age:nth-child(2) {
-  background-color: #3cb371;
+  background-color: #6a994e;
 }
 
 .category-age:nth-child(3) {
-  background-color: #9acd32;
+  background-color: #386641;
 }
 
 .category-title {
@@ -622,6 +632,7 @@ body-feedback {
   text-align: left;
   margin-top: 35px;
   margin-bottom: 35px;
+  padding-bottom: 50px;
 }
 
 .header-announcement {
@@ -646,7 +657,7 @@ body-feedback {
 }
 
 .date-box {
-  background-color: green;
+  background-color: #52A940;
   color: white;
   padding: 10px;
   border-radius: 5px 5px 0 0;
@@ -660,25 +671,46 @@ body-feedback {
 
 /* Next button style */
 .next-button-announcement {
-  background-color: green;
+  background-color: #52A940;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
-  text-align: center;
   display: block;
-  margin: 0 auto;
+  float: right;
 }
+
+.next-button-announcement:hover {
+  background-color: #228b22;
+}
+
+/* Prev button style */
+.prev-button-announcement {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+}
+
+.prev-button-announcement:hover {
+  background-color: #228b22;
+}
+
 
 /* biodata css */
 .container-biodata {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   justify-items: center;
   margin-top: 28px;
-  margin-bottom: 27px;
+  margin-bottom: 40px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 /* Card style for each publisher */
@@ -716,14 +748,14 @@ body-feedback {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 200px;
   margin-top: 46px;
   margin-bottom: 46px;
 }
 
 /* Review card styling */
 .card-review {
-  background-color: #a5d6a7;
+  background-color: #9bdd8b;
   border-radius: 10px;
   padding: 20px;
   width: 300px;
@@ -765,6 +797,7 @@ body-feedback {
   padding: 5px 10px;
   margin: 0 5px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .recommendations-container {
@@ -874,6 +907,7 @@ body-penilaian {
   background-color: #32cd32;
   color: #fff;
   margin-left: -460px;
+  border-radius: 25px;
 }
 
 .button-feedback-penilaian button.back:hover {
@@ -884,6 +918,7 @@ body-penilaian {
   background-color: #32cd32;
   color: white;
   margin-left: 1140px;
+  border-radius: 25px;
 }
 
 .button-feedback-penilaian button.next:hover {
@@ -944,6 +979,7 @@ body-penilaian {
   background-color: #32cd32;
   color: #fff;
   margin-left: -460px;
+  border-radius: 25px;
 }
 
 .button-saran button.back:hover {
@@ -954,6 +990,7 @@ body-penilaian {
   background-color: #32cd32;
   color: white;
   margin-left: 1140px;
+  border-radius: 25px;
 }
 
 .button-saran button.next:hover {
@@ -965,7 +1002,8 @@ body-penilaian {
   width: 80%;
   margin: 0 auto;
   text-align: left;
-  margin-bottom: 110px;
+  margin-bottom: 70px;
+  margin-top: 30px;
   display: flex;
 }
 
@@ -990,8 +1028,8 @@ body-penilaian {
   font-size: 39px;
   color: #555;
   margin-right: 175px;
-  margin-bottom: 51px;
-  margin-top: 51px;
+  margin-bottom: 67px;
+  margin-top: 67px;
 }
 
 .confirm-button {
@@ -1000,12 +1038,369 @@ body-penilaian {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   float: right;
-  margin-left: 400px;
+  margin-left: 450px;
 }
 
 .confirm-button:hover {
   background-color: #228b22;
+}
+
+/* css struktur organisasi */
+.kontainer-Struktur-Organisasi {
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+
+.header-struktur-organisasi {
+  margin-bottom: 60px;
+}
+
+.konten-Struktur-Organisasi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kepalaPerpus { 
+  width: 200px;
+  height: 75px;
+  background-color: #52a940;
+}
+
+/* css Kepala Perpustakaan */
+.container-kepala {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  background-color: #ddd;
+  border: 2px solid #999;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 144px;
+  color: #aaa;
+}
+.profile-info {
+  text-align: left;
+}
+.profile-info h1 {
+  font-size: 64px;
+  margin: 0;
+  color: #000;
+}
+.profile-info h2 {
+  font-size: 20px;
+  margin: 5px 0 0 0;
+  font-weight: normal;
+  font-size: 55px;
+}
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border-top: 2px solid black;
+  padding-top: 30px;
+  margin-top: 45px;
+}
+.team-member {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+}
+.team-picture {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 71px;
+}
+.team-member p {
+  margin: 5px 0;
+  font-size: 21px;
+}
+
+.button-back-kepalaPerpus {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-top: 25px;
+  margin-left: 60px;
+}
+
+.button-back-kepalaPerpus:hover {
+  background-color: #228b22;
+}
+
+.konten-kepala {
+  margin-bottom: 100px;
+}
+
+/* css Direkomendasikan */
+.book-cover {
+  width: 150px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 7.5px;
+}
+
+.direkomendasikan2 {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+.buku {
+  display: block;
+  justify-items: center;
+  margin-bottom: 10px;
+}
+
+.direkomendasikan1 {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.direkomendasikan1-1 {
+  height: 584px;
+  width: 222px;
+  background-color: #52A940;
+  border-radius: 5px;
+}
+
+.kontainer-direkomendasikan {
+  margin: 100px 0px;
+}
+
+p.populer {
+  margin-left: 20px;
+  font-size: 18px;
+  margin-bottom: 2px;
+  margin-top: 13px;
+}
+
+h1.header-direkomendasikan {
+  margin-bottom: 50px;
+}
+
+img.direkomendasikan {
+  width: 1368px;
+  height: 584px;
+}
+
+.title-direkomendasikan {
+  text-align: center;
+}
+
+/* css Detail Buku */
+.container-detail-buku  * {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.container-detail-buku {
+  display: flex;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 306px;
+  gap: 160px;
+}
+
+.left-section {
+  width: 60%;
+  padding: 20px;
+  padding-right: 0;
+  height: 35rem;
+}
+
+.top-left {
+  display: flex;
+  justify-content: center;
+}
+
+.top-left-p {
+  margin-left: 20px;
+  line-height: 70px;    
+}
+
+.right-section {
+  width: 40%;
+  padding: 20px;
+  padding-right: 48px;
+}
+
+.detailBuku {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.detailBuku img {
+  height: 300px;
+  width: 200px
+}
+
+.info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.info-detailbuku{
+  font-size: 14px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.abstract {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.abstract::before {
+  content: "✔";
+  color: black;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.date::before {
+  content: "📅";
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 17px;
+}
+
+.description p {
+  margin-left: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 8px;
+  width: 80%;
+  border: 2px solid #4caf50;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search button {
+  background-color: #4caf50;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.other-books {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-item-other {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.book-item-other img {
+  width: 50px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+.book-item-other .title {
+  font-size: 14px;
+}
+
+.button-back-detailBuku {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-top: -19px;
+  margin-left: 365px;
+}
+
+.button-back-detailBuku:hover {
+  background-color: #228b22;
+}
+
+.konten-detail {
+  margin: 90px 0;
+  justify-self: center;
 }
