@@ -1,0 +1,43 @@
+extends komponen/pug/_template.pug
+
+block content
+  .konten-detail
+    h1.header-detail-buku Detail Buku
+    .container-detail-buku
+      .left-section
+        .top-left
+          .detailBuku
+              img(src="img/buku2.png", alt="Detail Buku")
+          .top-left-p
+              
+              span Tanggal post
+              |  03-09-2024
+              .info
+              | - Ensiklopedia Anak
+              .abstract Abstrak
+              .date 2022
+        .description
+          | Deskripsi buku
+          p | > Judul : Ensiklopedia anak
+          p | > Penulis : agung
+          p | > Penerbit : Yanto
+          p | > Tahun : 2005
+      .right-section
+        .search
+          input(type="text", placeholder="Pencarian")
+          button 🔍
+        .other-books Buku lainnya
+        .book-list
+          - 
+            const bookItemsData = [
+              { imageUrl: "img/buku2.png", postDate: "Tanggal post 03-09-2024", title: "Tittle" },
+              { imageUrl: "img/buku2.png", postDate: "Tanggal post 03-09-2024", title: "Tittle" },
+              { imageUrl: "img/buku2.png", postDate: "Tanggal post 03-09-2024", title: "Tittle" },
+              { imageUrl: "img/buku2.png", postDate: "Tanggal post 03-09-2024", title: "Tittle" },
+              { imageUrl: "img/buku2.png", postDate: "Tanggal post 03-09-2024", title: "Tittle" }
+            ];
+
+          each book in bookItemsData
+            +bookItemOther(book.imageUrl, book.postDate, book.title)
+    .button-detail.buku
+      button.button-back-detailBuku(onclick="location.href='search.html'") Back    
