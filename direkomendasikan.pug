@@ -1,19 +1,30 @@
 extends komponen/pug/_template.pug
 
 block content
+  -
+    const dataBuku1 = [
+      'img/buku1.png',
+      'img/buku1.png'
+    ];
+  -
+    const dataBuku2 = [
+      'img/buku2.png',
+      'img/buku2.png',
+      'img/buku2.png',
+      'img/buku2.png',
+      'img/buku2.png',
+      'img/buku2.png',
+      'img/buku2.png'
+    ];
   .kontainer-direkomendasikan
-    h1.header-direkomendasikan
+    h1.header-direkomendasikan Direkomendasikan
     .konten-direkomendasikan
       .direkomendasikan1
         img.direkomendasikan(src="img/rekomendasi1.png", alt="gambar utama")
         .direkomendasikan1-1
-          +buku(gambarBuku)
-          +buku(gambarBuku)
+          p.populer Populer :
+          each buku1 in dataBuku1
+            +buku(buku1)
       .direkomendasikan2
-        +buku(gambarBuku)
-        +buku(gambarBuku)
-        +buku(gambarBuku)
-        +buku(gambarBuku)
-        +buku(gambarBuku)
-        +buku(gambarBuku)
-        +buku(gambarBuku)
+        each buku2 in dataBuku2
+          +buku(buku2)
