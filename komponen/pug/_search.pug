@@ -1,0 +1,14 @@
+mixin bookItem(cover, title, date, writer, genre)
+  .book-item-search
+    img(src=cover, alt="Book Cover")
+    .book-info-search
+      p.ket-search= title
+      p.ket-search
+        span.icon 📅
+        = date
+      p.ket-search
+        span.icon 👤
+        = writer
+      p.ket-search
+        span.icon ✔
+        = genre

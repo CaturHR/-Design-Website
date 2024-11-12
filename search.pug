@@ -1,0 +1,20 @@
+extends komponen/pug/_template.pug
+
+block content
+  -
+    const dataBuku = [
+      { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
+      { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
+      { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
+      { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
+      { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' }
+    ];
+  .kontainer-search
+    .pencarian
+      input(type="text", placeholder="Pencarian")
+      button 🔍
+    .book-list-search
+      a(href="detailBuku.html") 
+        +bookItem('img/buku2.png', 'Ensiklopedia...', '01-12-2022', 'Agung', 'Abstrak')
+      each buku in dataBuku
+        +bookItem(buku.img, buku.title, buku.date, buku.writer, buku.genre)

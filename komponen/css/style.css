@@ -1404,3 +1404,52 @@ img.direkomendasikan {
   margin: 90px 0;
   justify-self: center;
 }
+
+/* css search */
+.kontainer-search {
+  margin: 100px 130px;
+}
+
+.book-list-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+.book-item-search {
+  display: flex;
+  min-width: 273px;
+}
+
+.pencarian {
+  display: flex;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.pencarian input {
+  padding: 8px;
+  width: 92%;
+  border: 2px solid #4caf50;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 20px;
+}
+
+.pencarian button {
+  background-color: #4caf50;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ket-search {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: white;
+  margin: 19px 10px;
+}
