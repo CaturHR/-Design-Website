@@ -1,0 +1,55 @@
+extends komponen/pug/_template.pug
+
+block content
+  -
+    const newsData = [
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Remy Sylado',
+        date: '8 Januari 1991'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Laksmi Pamuntjak',
+        date: '1 Maret 2012'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Ahmad Fuadi',
+        date: '1 November 2009'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Ratih Kumala',
+        date: '14 Desember 2014'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Leila S. Chudori',
+        date: '29 Februari 2012'
+      },
+      {
+        title: 'Title',
+        image: 'https://storage.googleapis.com/a1aa/image/Xq7xPY6RqFoDB1vH1eqqM0sQWIZghfAs5cMDOi9ZcYJ2xnrTA.jpg',
+        description: 'Lorem ipsum dolor amet, consectetur adipiscing elit. Deplibus aute veniam torquent fermentum porttitor.',
+        author: 'Nadia Khan',
+        date: '28 Agustus 2018'
+      }
+    ];
+  .konten-berita
+    h1.header-container-berita Berita
+    .container-berita
+      each news in newsData
+        +newsItem(news.title, news.image, news.description, news.author, news.date)
+    .button-berita
+      button.prev-button-berita(onclick="location.href='berita1.html'") Prev

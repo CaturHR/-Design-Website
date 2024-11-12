@@ -1453,3 +1453,41 @@ img.direkomendasikan {
   text-decoration-color: white;
   margin: 19px 10px;
 }
+
+/* css halaman berita */
+.konten-berita {
+  margin-top: 85px;
+  margin-bottom: 115px;
+}
+
+.next-button-berita {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin-right: 40px;
+}
+
+.next-button-berita:hover {
+  background-color: #228b22;
+}
+
+.prev-button-berita {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-left: 40px;
+}
+
+.prev-button-berita:hover {
+  background-color: #228b22;
+}
