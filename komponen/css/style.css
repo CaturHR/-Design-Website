@@ -1067,9 +1067,13 @@ body-penilaian {
 }
 
 .kepalaPerpus { 
-  width: 200px;
-  height: 75px;
+  width: 150px;
+  height: 56px;
   background-color: #52a940;
+}
+
+img.struktur {
+  max-width: 1321px;
 }
 
 /* css Kepala Perpustakaan */
@@ -1394,7 +1398,7 @@ img.direkomendasikan {
   display: block;
   float: left;
   margin-top: -19px;
-  margin-left: 365px;
+  margin-left: 275px;
 }
 
 .button-back-detailBuku:hover {
@@ -1565,7 +1569,7 @@ img.direkomendasikan {
   display: block;
   float: left;
   margin-top: -100px;
-  margin-left: 450px;
+  margin-left: 275px;
 }
 
 .button-back-perkembangan1:hover {
