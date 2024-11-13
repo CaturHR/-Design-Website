@@ -571,6 +571,7 @@ body-feedback {
 
 .header-age-classification {
   color: #228b22;
+  margin-top: 80px;
 }
 
 .container-age-categories {
@@ -578,7 +579,7 @@ body-feedback {
   justify-content: center;
   gap: 200px;
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .category-age {
