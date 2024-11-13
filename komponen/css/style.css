@@ -312,7 +312,7 @@ h1 {
   font-size: 24pt;
   text-align: center;
   margin-top: 160px;
-  margin-bottom: 128px;
+  margin-bottom: 100px;
 }
 
 .lokasi-map img {
@@ -320,7 +320,7 @@ h1 {
   max-width: 1313px;
   height: auto;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .lokasi-alamat p {
@@ -1413,13 +1413,13 @@ img.direkomendasikan {
 .book-list-search {
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 130px;
   justify-content: center;
 }
 
 .book-item-search {
   display: flex;
-  min-width: 273px;
+  min-width: 333px;
 }
 
 .pencarian {
@@ -1456,7 +1456,7 @@ img.direkomendasikan {
 
 /* css halaman berita */
 .konten-berita {
-  margin-top: 85px;
+  margin-top: 75px;
   margin-bottom: 115px;
 }
 
@@ -1469,7 +1469,7 @@ img.direkomendasikan {
   cursor: pointer;
   display: block;
   float: right;
-  margin-right: 40px;
+  margin-right: 65px;
 }
 
 .next-button-berita:hover {
@@ -1485,9 +1485,14 @@ img.direkomendasikan {
   cursor: pointer;
   display: block;
   float: left;
-  margin-left: 40px;
+  margin-left: 65px;
 }
 
 .prev-button-berita:hover {
   background-color: #228b22;
+}
+
+/* css halaman lokasi perpusum */
+.konten-lokasi {
+  margin-top: -60px;
 }
