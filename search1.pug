@@ -7,6 +7,7 @@ block content
       { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
       { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
       { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
+      { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' },
       { img: 'img/buku2.png', title: 'Title', date: 'Date', writer: 'Writer', genre: 'Genre' }
     ];
   .kontainer-search
@@ -14,9 +15,8 @@ block content
       input(type="text", placeholder="Pencarian")
       button 🔍
     .book-list-search
-      a(href="detailBuku.html") 
-        +bookItem('img/buku2.png', 'Ensiklopedia...', '01-12-2022', 'Agung', 'Abstrak')
       each buku in dataBuku
         +bookItem(buku.img, buku.title, buku.date, buku.writer, buku.genre)
     .button-search 
-      button.next-button-search(onclick="location.href='search1.html'") Next
+      button.next-button-search(onclick="location.href='search2.html'") Next
+      button.prev-button-search(onclick="location.href='search.html'") Prev

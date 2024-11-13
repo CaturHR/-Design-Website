@@ -1408,6 +1408,7 @@ img.direkomendasikan {
 /* css search */
 .kontainer-search {
   margin: 100px 130px;
+  margin-bottom: 200px;
 }
 
 .book-list-search {
@@ -1454,6 +1455,40 @@ img.direkomendasikan {
   margin: 19px 10px;
 }
 
+.next-button-search {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin-right: 325px;
+  margin-top: 70px;
+}
+
+.next-button-search:hover {
+  background-color: #228b22;
+}
+
+.prev-button-search {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-left: 190px;
+  margin-top: 70px;
+}
+
+.prev-button-search:hover {
+  background-color: #228b22;
+}
+
 /* css halaman berita */
 .konten-berita {
   margin-top: 75px;
@@ -1495,4 +1530,48 @@ img.direkomendasikan {
 /* css halaman lokasi perpusum */
 .konten-lokasi {
   margin-top: -60px;
+}
+
+/* css Perkembangan 1 */
+.icon-container-perkembangan1 {
+  font-size: 320px;
+  color: green;
+}
+.title-perkembangan1 {
+  font-size: 3em;
+  margin-top: 20px;
+}
+.description-perkembangan1 {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.image-container-perkembangan1 {
+  display: flex;
+  justify-content: center;
+}
+
+.button-back-perkembangan1 {
+  background-color: #52A940;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-top: -100px;
+  margin-left: 450px;
+}
+
+.button-back-perkembangan1:hover {
+  background-color: #228b22;
+}
+
+.konten-perkembangan1 {
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
