@@ -1176,7 +1176,7 @@ body-penilaian {
 
 .direkomendasikan2 {
   display: flex;
-  gap: 70px;
+  gap: 42px;
   justify-content: center;
 }
 
@@ -1216,7 +1216,7 @@ h1.header-direkomendasikan {
 }
 
 img.direkomendasikan {
-  width: 1368px;
+  width: 1151px;
   height: 584px;
 }
 
