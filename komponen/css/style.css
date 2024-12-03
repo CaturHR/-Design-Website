@@ -797,7 +797,6 @@ body-feedback {
   border: none;
   padding: 5px 10px;
   margin: 0 5px;
-  cursor: pointer;
   border-radius: 5px;
 }
 
@@ -1001,7 +1000,7 @@ body-penilaian {
 /* css Makasih */
 .container-makasih {
   width: 80%;
-  margin: 0 auto;
+  margin-left: 60px;
   text-align: left;
   margin-bottom: 70px;
   margin-top: 30px;
@@ -1162,8 +1161,8 @@ img.struktur {
 
 /* css Direkomendasikan */
 .book-cover {
-  width: 150px;
-  height: 220px;
+  width: 135px;
+  height: 198px;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -1198,7 +1197,7 @@ img.struktur {
 }
 
 .direkomendasikan1-1 {
-  height: 584px;
+  height: 550px;
   width: 222px;
   background-color: #52A940;
   border-radius: 5px;
@@ -1220,8 +1219,8 @@ h1.header-direkomendasikan {
 }
 
 img.direkomendasikan {
-  width: 1151px;
-  height: 584px;
+  width: 1050px;
+  height: 550px;
 }
 
 .title-direkomendasikan {
@@ -1263,7 +1262,7 @@ img.direkomendasikan {
 
 .top-left-p {
   margin-left: 20px;
-  line-height: 70px;    
+  line-height: 49px;    
 }
 
 .right-section {
@@ -1419,7 +1418,7 @@ img.direkomendasikan {
 .book-list-search {
   display: flex;
   flex-wrap: wrap;
-  gap: 130px;
+  gap: 88px;
   justify-content: center;
 }
 
@@ -1469,7 +1468,7 @@ img.direkomendasikan {
   cursor: pointer;
   display: block;
   float: right;
-  margin-right: 325px;
+  margin-right: 125px;
   margin-top: 70px;
 }
 
@@ -1486,7 +1485,6 @@ img.direkomendasikan {
   cursor: pointer;
   display: block;
   float: left;
-  margin-left: 190px;
   margin-top: 70px;
 }
 
@@ -1569,7 +1567,7 @@ img.direkomendasikan {
   display: block;
   float: left;
   margin-top: -100px;
-  margin-left: 275px;
+  margin-left: 225px;
 }
 
 .button-back-perkembangan1:hover {
